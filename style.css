@@ -4,6 +4,7 @@
   --paper-alt: #f1efe6;
   --mint: #e6f4ec;
   --mint-border: #c9e6d6;
+  --mist: #eef7f1;
   --accent: #1f8f6a;
   --accent-dark: #146b50;
   --accent-bright: #3ddc97;
@@ -246,7 +247,7 @@ a { color: var(--accent-dark); }
 .section h2.center { margin-left: auto; margin-right: auto; }
 
 #what-we-do {
-  background: radial-gradient(900px 420px at 15% 0%, rgba(31, 143, 106, 0.06), transparent 60%), var(--paper);
+  background: radial-gradient(900px 420px at 15% 0%, rgba(31, 143, 106, 0.1), transparent 60%), var(--mist);
 }
 
 /* Cards */
@@ -361,11 +362,11 @@ a { color: var(--accent-dark); }
 .contact-direct a { color: var(--accent-bright); }
 
 .contact-form {
-  background: var(--card);
-  border: 1px solid var(--border);
+  background: var(--mist);
+  border: 1px solid var(--mint-border);
   border-radius: 16px;
   padding: 36px;
-  box-shadow: 0 20px 48px rgba(16, 35, 29, 0.06);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.25);
 }
 
 .hidden-field { display: none; }
