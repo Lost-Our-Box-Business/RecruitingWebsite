@@ -232,9 +232,9 @@ a { color: var(--accent-dark); }
 .section.alt {
   background:
     radial-gradient(900px 420px at 85% 0%, rgba(31, 143, 106, 0.08), transparent 60%),
-    var(--mint);
-  border-top: 1px solid var(--mint-border);
-  border-bottom: 1px solid var(--mint-border);
+    #abb8ab;
+  border-top: 1px solid #94a294;
+  border-bottom: 1px solid #94a294;
 }
 
 .section h2 {
@@ -247,7 +247,7 @@ a { color: var(--accent-dark); }
 .section h2.center { margin-left: auto; margin-right: auto; }
 
 #what-we-do {
-  background: radial-gradient(900px 420px at 15% 0%, rgba(31, 143, 106, 0.16), transparent 60%), #a0faa0;
+  background: radial-gradient(900px 420px at 15% 0%, rgba(31, 143, 106, 0.16), transparent 60%), #abb8ab;
 }
 
 /* Cards */
@@ -362,8 +362,8 @@ a { color: var(--accent-dark); }
 .contact-direct a { color: var(--accent-bright); }
 
 .contact-form {
-  background: var(--mist);
-  border: 1px solid var(--mint-border);
+  background: #abb8ab;
+  border: 1px solid #94a294;
   border-radius: 16px;
   padding: 36px;
   box-shadow: 0 24px 56px rgba(0, 0, 0, 0.25);
