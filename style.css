@@ -4,7 +4,7 @@
   --paper-alt: #f1efe6;
   --mint: #e6f4ec;
   --mint-border: #c9e6d6;
-  --mist: #eef7f1;
+  --mist: #e3f3ea;
   --accent: #1f8f6a;
   --accent-dark: #146b50;
   --accent-bright: #3ddc97;
@@ -247,7 +247,7 @@ a { color: var(--accent-dark); }
 .section h2.center { margin-left: auto; margin-right: auto; }
 
 #what-we-do {
-  background: radial-gradient(900px 420px at 15% 0%, rgba(31, 143, 106, 0.1), transparent 60%), var(--mist);
+  background: radial-gradient(900px 420px at 15% 0%, rgba(31, 143, 106, 0.16), transparent 60%), #dcf0e4;
 }
 
 /* Cards */
