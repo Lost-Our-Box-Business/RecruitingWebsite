@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lost Our Box Recruiting — Tech &amp; Software Talent</title>
+<meta name="description" content="Lost Our Box Recruiting connects growing tech and software companies with vetted engineering and product talent.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">Lost Our Box <span>Recruiting</span></a>
+    <nav>
+      <a href="#what-we-do">What We Do</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Tech &amp; software talent, sourced right.</h1>
+    <p class="lede">We're a contingency recruiting firm focused exclusively on engineering and
+      product roles — helping growing software companies fill open reqs with vetted candidates,
+      fast.</p>
+    <a class="btn" href="#contact">Tell us who you're hiring for</a>
+  </div>
+</section>
+
+<section id="what-we-do" class="section">
+  <div class="wrap">
+    <h2>What We Do</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>For Companies</h3>
+        <p>Share your open role and we go source, screen for fit, and bring you a shortlist of
+          candidates who are ready to talk — no cost unless you hire.</p>
+      </div>
+      <div class="card">
+        <h3>For Candidates</h3>
+        <p>We work with engineers and product people actively exploring new roles, matching you
+          to companies and teams that fit — never a blind spam list.</p>
+      </div>
+      <div class="card">
+        <h3>Our Focus</h3>
+        <p>Software engineering, infrastructure, and product roles. We know the difference
+          between a backend req and a platform req, and we recruit accordingly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works" class="section alt">
+  <div class="wrap">
+    <h2>How It Works</h2>
+    <ol class="steps">
+      <li><strong>Tell us the role.</strong> Title, stack, seniority, and what "good" looks like
+        for the team.</li>
+      <li><strong>We source and screen.</strong> Candidates are organized and qualified against
+        your criteria — we don't rank or score people, we present who fits.</li>
+      <li><strong>You interview and decide.</strong> We stay in the loop to keep things moving,
+        but the hiring call is always yours.</li>
+      <li><strong>Contingency fee, only on a hire.</strong> No placement, no fee.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap">
+    <h2>Get in Touch</h2>
+    <p class="lede">Hiring for a role, or looking for your next one? Send us a note.</p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hidden-field"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+
+      <div class="field-row">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" required>
+      </div>
+      <div class="field-row">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required>
+      </div>
+      <div class="field-row">
+        <label for="company">Company (if hiring)</label>
+        <input id="company" type="text" name="company">
+      </div>
+      <div class="field-row">
+        <label for="reason">I'm reaching out because</label>
+        <select id="reason" name="reason">
+          <option>We're hiring and want to talk</option>
+          <option>I'm a candidate looking for roles</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Lost Our Box Recruiting, LLC &mdash; <a href="mailto:contact@lostourboxrecruiting.com">contact@lostourboxrecruiting.com</a></p>
+    <p class="fine-print">
+      <!-- TODO: replace with real business mailing address before any commercial email goes out (CAN-SPAM requirement) -->
+      [Business Address Placeholder — TODO: add real mailing address]
+    </p>
+    <p class="fine-print">&copy; <span id="year"></span> Lost Our Box Recruiting, LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
