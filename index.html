@@ -4,47 +4,85 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lost Our Box Recruiting — Tech &amp; Software Talent</title>
-<meta name="description" content="Lost Our Box Recruiting connects growing tech and software companies with vetted engineering and product talent.">
+<meta name="description" content="Lost Our Box Recruiting connects growing tech and software companies with vetted engineering and product talent. Contingency-based, no cost unless you hire.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="wrap">
-    <a class="wordmark" href="/">Lost Our Box <span>Recruiting</span></a>
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/">
+      <img src="favicon.svg" alt="" class="wordmark-icon">
+      Lost Our Box <span>Recruiting</span>
+    </a>
     <nav>
       <a href="#what-we-do">What We Do</a>
       <a href="#how-it-works">How It Works</a>
-      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
-  <div class="wrap">
-    <h1>Tech &amp; software talent, sourced right.</h1>
-    <p class="lede">We're a contingency recruiting firm focused exclusively on engineering and
-      product roles — helping growing software companies fill open reqs with vetted candidates,
-      fast.</p>
-    <a class="btn" href="#contact">Tell us who you're hiring for</a>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Tech &amp; Software Recruiting</p>
+    <h1>We find the engineers who move your roadmap forward.</h1>
+    <p class="lede">A contingency recruiting firm focused exclusively on software engineering
+      and product roles — vetted candidates, organized and ready to talk, with zero upfront
+      cost.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contact">Tell us who you're hiring for</a>
+      <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+    </div>
+  </div>
+  <div class="trust-bar">
+    <div class="wrap trust-bar-inner">
+      <div class="trust-item">
+        <strong>No placement, no fee</strong>
+        <span>Contingency only — you pay nothing until someone's hired</span>
+      </div>
+      <div class="trust-item">
+        <strong>Software &amp; engineering only</strong>
+        <span>We don't spread thin across every industry</span>
+      </div>
+      <div class="trust-item">
+        <strong>People, not scores</strong>
+        <span>We organize and qualify candidates — the hiring call is always yours</span>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="what-we-do" class="section">
   <div class="wrap">
-    <h2>What We Do</h2>
+    <p class="eyebrow center">What We Do</p>
+    <h2 class="center">Built around one thing: technical hiring.</h2>
     <div class="cards">
       <div class="card">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/></svg>
+        </div>
         <h3>For Companies</h3>
-        <p>Share your open role and we go source, screen for fit, and bring you a shortlist of
+        <p>Share your open role and we source, screen for fit, and bring you a shortlist of
           candidates who are ready to talk — no cost unless you hire.</p>
       </div>
       <div class="card">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        </div>
         <h3>For Candidates</h3>
         <p>We work with engineers and product people actively exploring new roles, matching you
-          to companies and teams that fit — never a blind spam list.</p>
+          to companies and teams that genuinely fit — never a blind spam list.</p>
       </div>
       <div class="card">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 17V7a2 2 0 012-2h5l2 2h7v10a2 2 0 01-2 2H6a2 2 0 01-2-2z"/></svg>
+        </div>
         <h3>Our Focus</h3>
         <p>Software engineering, infrastructure, and product roles. We know the difference
           between a backend req and a platform req, and we recruit accordingly.</p>
@@ -55,68 +93,99 @@
 
 <section id="how-it-works" class="section alt">
   <div class="wrap">
-    <h2>How It Works</h2>
-    <ol class="steps">
-      <li><strong>Tell us the role.</strong> Title, stack, seniority, and what "good" looks like
-        for the team.</li>
-      <li><strong>We source and screen.</strong> Candidates are organized and qualified against
-        your criteria — we don't rank or score people, we present who fits.</li>
-      <li><strong>You interview and decide.</strong> We stay in the loop to keep things moving,
-        but the hiring call is always yours.</li>
-      <li><strong>Contingency fee, only on a hire.</strong> No placement, no fee.</li>
-    </ol>
+    <p class="eyebrow center">How It Works</p>
+    <h2 class="center">A simple, transparent process.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Tell us the role</h3>
+        <p>Title, stack, seniority, and what "good" looks like for the team.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>We source and screen</h3>
+        <p>Candidates are organized and qualified against your criteria — we present who
+          fits, not a ranked score.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>You interview and decide</h3>
+        <p>We stay in the loop to keep things moving, but the hiring call is always yours.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Pay only on a hire</h3>
+        <p>Contingency fee, due only when someone actually starts. No placement, no fee.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="contact" class="section">
+<section id="contact" class="section contact-section">
   <div class="wrap">
-    <h2>Get in Touch</h2>
-    <p class="lede">Hiring for a role, or looking for your next one? Send us a note.</p>
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow">Get in Touch</p>
+        <h2>Hiring, or looking for your next role?</h2>
+        <p class="lede">Send us a note and we'll follow up personally — no automated
+          runaround.</p>
+        <p class="contact-direct">
+          Prefer email? Reach us directly at
+          <a href="mailto:contact@lostourboxrecruiting.com">contact@lostourboxrecruiting.com</a>
+        </p>
+      </div>
 
-    <!-- TODO: replace REPLACE_WITH_FORMSPREE_ID below once you've created a free form at
-         https://formspree.io pointed at contact@lostourboxrecruiting.com — GitHub Pages only
-         serves static files, so a third-party form backend is what actually delivers this. -->
-    <form method="POST" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" class="contact-form">
-      <input type="hidden" name="_next" value="https://lostourboxrecruiting.com/thank-you.html">
-      <p class="hidden-field"><label>Don't fill this out if you're human: <input name="_gotcha"></label></p>
+      <!-- TODO: replace REPLACE_WITH_FORMSPREE_ID below once you've created a free form at
+           https://formspree.io pointed at contact@lostourboxrecruiting.com — GitHub Pages only
+           serves static files, so a third-party form backend is what actually delivers this. -->
+      <form method="POST" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" class="contact-form">
+        <input type="hidden" name="_next" value="https://lostourboxrecruiting.com/thank-you.html">
+        <p class="hidden-field"><label>Don't fill this out if you're human: <input name="_gotcha"></label></p>
 
-      <div class="field-row">
-        <label for="name">Name</label>
-        <input id="name" type="text" name="name" required>
-      </div>
-      <div class="field-row">
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email" required>
-      </div>
-      <div class="field-row">
-        <label for="company">Company (if hiring)</label>
-        <input id="company" type="text" name="company">
-      </div>
-      <div class="field-row">
-        <label for="reason">I'm reaching out because</label>
-        <select id="reason" name="reason">
-          <option>We're hiring and want to talk</option>
-          <option>I'm a candidate looking for roles</option>
-          <option>Something else</option>
-        </select>
-      </div>
-      <div class="field-row">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-      <button class="btn" type="submit">Send</button>
-    </form>
+        <div class="field-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" required>
+        </div>
+        <div class="field-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+        <div class="field-row">
+          <label for="company">Company (if hiring)</label>
+          <input id="company" type="text" name="company">
+        </div>
+        <div class="field-row">
+          <label for="reason">I'm reaching out because</label>
+          <select id="reason" name="reason">
+            <option>We're hiring and want to talk</option>
+            <option>I'm a candidate looking for roles</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Send</button>
+      </form>
+    </div>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <p>Lost Our Box Recruiting, LLC &mdash; <a href="mailto:contact@lostourboxrecruiting.com">contact@lostourboxrecruiting.com</a></p>
-    <p class="fine-print">
-      <!-- TODO: replace with real business mailing address before any commercial email goes out (CAN-SPAM requirement) -->
-      [Business Address Placeholder — TODO: add real mailing address]
-    </p>
-    <p class="fine-print">&copy; <span id="year"></span> Lost Our Box Recruiting, LLC. All rights reserved.</p>
+  <div class="wrap footer-inner">
+    <a class="wordmark footer-wordmark" href="/">
+      <img src="favicon.svg" alt="" class="wordmark-icon">
+      Lost Our Box <span>Recruiting</span>
+    </a>
+    <div class="footer-meta">
+      <p>Lost Our Box Recruiting, LLC &mdash; <a href="mailto:contact@lostourboxrecruiting.com">contact@lostourboxrecruiting.com</a></p>
+      <p class="fine-print">
+        <!-- TODO: replace with real business mailing address before any commercial email goes out (CAN-SPAM requirement) -->
+        [Business Address Placeholder — TODO: add real mailing address]
+      </p>
+      <p class="fine-print">&copy; <span id="year"></span> Lost Our Box Recruiting, LLC. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 
