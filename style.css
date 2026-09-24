@@ -2,6 +2,8 @@
   --ink: #10231d;
   --paper: #fbfaf6;
   --paper-alt: #f1efe6;
+  --mint: #e6f4ec;
+  --mint-border: #c9e6d6;
   --accent: #1f8f6a;
   --accent-dark: #146b50;
   --accent-bright: #3ddc97;
@@ -221,9 +223,18 @@ a { color: var(--accent-dark); }
 
 /* Sections */
 
-.section { padding: 88px 0; }
+.section {
+  padding: 88px 0;
+  position: relative;
+}
 
-.section.alt { background: var(--paper-alt); }
+.section.alt {
+  background:
+    radial-gradient(900px 420px at 85% 0%, rgba(31, 143, 106, 0.08), transparent 60%),
+    var(--mint);
+  border-top: 1px solid var(--mint-border);
+  border-bottom: 1px solid var(--mint-border);
+}
 
 .section h2 {
   font-size: 2rem;
@@ -233,6 +244,10 @@ a { color: var(--accent-dark); }
 }
 
 .section h2.center { margin-left: auto; margin-right: auto; }
+
+#what-we-do {
+  background: radial-gradient(900px 420px at 15% 0%, rgba(31, 143, 106, 0.06), transparent 60%), var(--paper);
+}
 
 /* Cards */
 
@@ -314,7 +329,18 @@ a { color: var(--accent-dark); }
 
 /* Contact */
 
-.contact-section { background: var(--paper); }
+.contact-section {
+  background:
+    radial-gradient(1000px 460px at 85% 0%, rgba(61, 220, 151, 0.14), transparent 60%),
+    linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 70%, #081915 100%);
+  color: #fff;
+}
+
+.contact-section .eyebrow { color: var(--accent-bright); }
+
+.contact-section h2 { color: #fff; }
+
+.contact-section .lede { color: rgba(255, 255, 255, 0.75); }
 
 .contact-grid {
   display: grid;
@@ -328,9 +354,11 @@ a { color: var(--accent-dark); }
 .contact-direct {
   margin-top: 28px;
   padding-top: 20px;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.65);
 }
+
+.contact-direct a { color: var(--accent-bright); }
 
 .contact-form {
   background: var(--card);
