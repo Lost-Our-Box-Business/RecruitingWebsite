@@ -73,9 +73,12 @@
     <h2>Get in Touch</h2>
     <p class="lede">Hiring for a role, or looking for your next one? Send us a note.</p>
 
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="contact-form">
-      <input type="hidden" name="form-name" value="contact">
-      <p class="hidden-field"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+    <!-- TODO: replace REPLACE_WITH_FORMSPREE_ID below once you've created a free form at
+         https://formspree.io pointed at contact@lostourboxrecruiting.com — GitHub Pages only
+         serves static files, so a third-party form backend is what actually delivers this. -->
+    <form method="POST" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" class="contact-form">
+      <input type="hidden" name="_next" value="https://lostourboxrecruiting.com/thank-you.html">
+      <p class="hidden-field"><label>Don't fill this out if you're human: <input name="_gotcha"></label></p>
 
       <div class="field-row">
         <label for="name">Name</label>
