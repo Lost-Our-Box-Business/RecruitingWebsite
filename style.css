@@ -247,7 +247,7 @@ a { color: var(--accent-dark); }
 .section h2.center { margin-left: auto; margin-right: auto; }
 
 #what-we-do {
-  background: radial-gradient(900px 420px at 15% 0%, rgba(31, 143, 106, 0.16), transparent 60%), #dcf0e4;
+  background: radial-gradient(900px 420px at 15% 0%, rgba(31, 143, 106, 0.16), transparent 60%), #a0faa0;
 }
 
 /* Cards */
