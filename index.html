@@ -135,12 +135,15 @@
         </p>
       </div>
 
-      <!-- TODO: replace REPLACE_WITH_FORMSPREE_ID below once you've created a free form at
-           https://formspree.io pointed at contact@lostourboxrecruiting.com — GitHub Pages only
-           serves static files, so a third-party form backend is what actually delivers this. -->
-      <form method="POST" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" class="contact-form">
+      <!-- GitHub Pages only serves static files, so FormSubmit (no account needed) emails each
+           submission to the address in the action URL. The first submission ever sent makes
+           FormSubmit email an activation link to that address; click it once and it's live. -->
+      <form method="POST" action="https://formsubmit.co/contact@lostourboxrecruiting.com" class="contact-form">
         <input type="hidden" name="_next" value="https://lostourboxrecruiting.com/thank-you.html">
-        <p class="hidden-field"><label>Don't fill this out if you're human: <input name="_gotcha"></label></p>
+        <input type="hidden" name="_subject" value="New inquiry from lostourboxrecruiting.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <p class="hidden-field"><label>Don't fill this out if you're human: <input name="_honey" tabindex="-1" autocomplete="off"></label></p>
 
         <div class="field-row">
           <label for="name">Name</label>
@@ -180,10 +183,7 @@
     </a>
     <div class="footer-meta">
       <p>Lost Our Box Recruiting, LLC &mdash; <a href="mailto:contact@lostourboxrecruiting.com">contact@lostourboxrecruiting.com</a></p>
-      <p class="fine-print">
-        <!-- TODO: replace with real business mailing address before any commercial email goes out (CAN-SPAM requirement) -->
-        [Business Address Placeholder — TODO: add real mailing address]
-      </p>
+      <p class="fine-print">820 West Spring Creek Pkwy, #400z, Plano, TX 75023</p>
       <p class="fine-print">&copy; <span id="year"></span> Lost Our Box Recruiting, LLC. All rights reserved.</p>
     </div>
   </div>

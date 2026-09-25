@@ -10,18 +10,16 @@ Pages** (free) at `Lost-Our-Box-Business/RecruitingWebsite`.
 - `style.css` — all styling
 - `CNAME` — tells GitHub Pages which custom domain to serve this repo at (lostourboxrecruiting.com)
 
-## Before this goes fully live
+## Contact form and address
 
-- **Contact form backend**: GitHub Pages only serves static files — no server code, so it can't
-  process a form submission itself the way Netlify Forms could. This site uses
-  [Formspree](https://formspree.io) instead (free tier, 50 submissions/month):
-  1. Sign up free at formspree.io with contact@lostourboxrecruiting.com (or forward to it).
-  2. Create a new form; Formspree gives you a form ID (`https://formspree.io/f/xxxxxxxx`).
-  3. In `index.html`, replace `REPLACE_WITH_FORMSPREE_ID` in the `<form action="...">` with that ID.
-  4. Formspree emails you every submission automatically — no extra dashboard step needed.
-- **Business address**: `index.html`'s footer has a `TODO` placeholder where the real mailing
-  address needs to go (legally required once this address is reused in any commercial email
-  footer — see the Recruiting Agent app's `OutreachTemplateBuilder`).
+- **Contact form backend**: GitHub Pages only serves static files, so it can't process a form
+  submission itself. The form posts to [FormSubmit](https://formsubmit.co) (free, no account), which
+  emails every submission to contact@lostourboxrecruiting.com. **One-time activation:** the very
+  first submission makes FormSubmit email an activation link to that address; click it once and
+  submissions flow from then on. Spam is handled by a hidden honeypot field (`_honey`).
+- **Business address**: the footer shows the same mailing address the Recruiting Agent app prints in
+  every outreach email's CAN-SPAM footer (820 West Spring Creek Pkwy, #400z, Plano, TX 75023). If it
+  ever changes, update it here and in the app's Settings > Email sending.
 
 ## DNS (GoDaddy)
 
